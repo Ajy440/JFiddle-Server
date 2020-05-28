@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String in=s.next();
+        int flag=0;
+        for (int i = 0; i <in.length() ; i++) {
+            if(in.charAt(i)==','){flag=1;}
+        }
+        if(flag==1){
+            int index=in.indexOf(',');
+            String t1=in.substring(0,index);
+            String t2=in.substring(index+1,in.length());
+           // System.out.println(t1+"tt"+t2);
+            getRandomNumberInRange(Integer.parseInt(t1),Integer.parseInt(t2));
+
+
+
+        }
+        else{
+            System.out.println("Invalid Input use lower,upper");
+        }
+
+
+       
+}
+    private static int getRandomNumberInRange(int min, int max) {
+
+        if (min >= max) {
+            System.out.println("max must be greater than min");
+        }
+
+        Random r = new Random();
+        int res= r.nextInt((max - min) + 1) + min;
+        System.out.println(res);
+        return res;
+    }
+}

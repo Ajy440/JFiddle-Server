@@ -1,0 +1,42 @@
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String in=s.nextLine();
+        in=in.replaceAll(",","0");
+        int sindex=0;
+        int eindex=0;
+        int count=0;String temp="";
+        HashMap<String , Integer> map=new HashMap<String , Integer>();
+        for (int i = 0; i <in.length() ; i++) {
+            char ch=in.charAt(i);
+            if(i>1 && in.charAt(i-1)==' '){sindex=i-1;}
+            if(i<in.length()-1 && in.charAt(i+1)==' '){eindex=i+1;}
+            if(eindex-sindex>5 ){
+                String hh=in.substring(sindex+1,eindex);
+                if(map.get(hh)==null){map.put(hh,++count);}
+            }
+
+        }
+        //System.out.println(map);
+
+        //moving words
+        String res="";
+        String[] words = in.split(" ");
+        for (int i = 0; i <words.length ; i++) {
+            if(map.get(words[i])!=null){words[i]= String.valueOf(map.get(words[i]))+'#';}
+            res=res+words[i]+" ";
+        }
+
+        System.out.println(res+"CODER"+map);
+//        System.out.println("CODER"+map);
+
+
+    }
+}

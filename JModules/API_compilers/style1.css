@@ -1,0 +1,145 @@
+#ta1{
+    background: url(https://i.ibb.co/RzCr7Kv/lining.png);
+    background-size: 35px;
+background-attachment: local;
+background-repeat: no-repeat;
+padding-left: 35px;
+padding-top: 10px;
+    border-color:rgb(33,38,45);
+    background-color: rgb(33,38,45);
+    color: white;
+    height: 65vh;
+    font-family: 'Nunito', sans-serif;
+
+
+
+
+}
+
+#input{
+    
+    background-color: rgb(33,38,45);
+    color: white;
+    width: 100%;
+    min-width: 100%
+    border-color:rgb(33,38,45);
+    font-size:1vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+#output{
+  
+    background-color: rgb(33,38,45);
+    color: white;
+    font-size:1vw;
+    
+}
+
+body {
+ 
+   background-color: rgb(33,38,45);
+
+}
+
+ #navbar-custom { 
+            background-color: rgb(29,33,39) !important;; 
+        } 
+
+
+ #label1
+ {color: white;}
+
+ #hr1
+ {color:  rgb(29,33,39);
+    background-color: rgb(29,33,39);
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+ }
+
+
+.col-sm-1
+{
+    background-color: rgb(29,33,39) ;
+    color: white;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+
+
+}
+
+#icon{
+    max-width: 9%;
+    align-self: left;
+
+}
+
+#icon2{
+    max-height:  7vh;
+    align-self: right;
+    align-content: right;
+    align-items: right;
+    margin-right: 5px;
+
+}
+
+
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+
+#question{
+    height: 100vh;
+    background: rgb(29,33,39);
+    width: 100%;
+    color: white;
+}
+
+#questionname
+{
+    color: #009688;
+    font-weight: bold;
+}
+
+#inputparam
+{
+     color: #009688;
+}
+
+#invisible{
+    height: 0px;
+    width: 0px;
+}
+#alhj{
+    word-wrap: break-word;
+    background-image: url("https://i.pinimg.com/originals/93/2b/49/932b49680044a9a6ed63301ba9ae6441.gif");
+    background-size: 100% 100%;
+    font-weight: bold;
+    color: transparent;
+}
+#alhj1{
+    word-wrap: break-word;
+    
+    font-weight: bold;
+    background-color: rgb(255, 205, 111);
+}
+
+#aljh2{
+    word-wrap: break-word;
+    background-image: url("https://1.bp.blogspot.com/-mb2D_NYQU34/Wp9G7aFD3yI/AAAAAAAAAfs/W3t_ALdG1jQbO21B6txfVpwPvzzHyT2kgCLcBGAs/s1600/busy_guy.gif");
+    background-size: 100% 100%;
+    font-weight: bold;
+    color: transparent;
+}
+
+#aljh3{
+    word-wrap: break-word;
+    
+    font-weight: bold;
+    background-color: rgb(226, 237, 76);
+}
